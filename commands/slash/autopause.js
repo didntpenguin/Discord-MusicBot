@@ -17,7 +17,7 @@ const command = new SlashCommand()
         embeds: [
           new MessageEmbed()
             .setColor("RED")
-            .setDescription("Nút Lavalink không được kết nối"),
+            .setDescription("Lavalink chưa được kết nối"),
         ],
       });
 
@@ -44,7 +44,7 @@ const command = new SlashCommand()
     autoPauseEmbed
 			.setDescription(`**Auto Pause is** \`${!autoPause ? "ON" : "OFF"}\``)
 			.setFooter({
-			  text: `Trình phát sẽ ${!autoPause ? "tự động" : "ko còn bị"} dừng khi mọi người rời khỏi kênh thoại.`
+			  text: `Trình phát sẽ ${!autoPause ? "tự động" : "không còn"} dừng khi mọi người rời khỏi kênh thoại.`
 			});
     client.warn(
       `Player: ${player.options.guild} | [${colors.blue(

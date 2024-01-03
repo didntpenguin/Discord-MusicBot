@@ -4,7 +4,7 @@ const SlashCommand = require("../../lib/SlashCommand");
 
 const command = new SlashCommand()
 	.setName("247")
-	.setDescription("Giữ cho bot luôn luôn kết nối với VC (bật/tắt)")
+	.setDescription("Giữ cho bot luôn trong voice chat (bật/tắt)")
 	.setRun(async (client, interaction, options) => {
 		let channel = await client.getChannel(client, interaction);
 		if (!channel) {
@@ -19,7 +19,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("Nút Lavalink không được kết nối"),
+						.setDescription("Lavalink chưa được kết nối"),
 				],
 			});
 		}

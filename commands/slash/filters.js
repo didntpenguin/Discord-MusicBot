@@ -40,7 +40,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("Nút Lavalink không được kết nối"),
+						.setDescription("Lavalink chưa được kết nối"),
 				],
 			});
 		}
@@ -60,34 +60,34 @@ const command = new SlashCommand()
 		let filtersEmbed = new MessageEmbed().setColor(client.config.embedColor);
 		
 		if (args == "nightcore") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Nightcore hiện đang hoạt động!");
+			filtersEmbed.setDescription("✅ | EQ Nightcore hiện đang bật!");
 			player.nightcore = true;
 		} else if (args == "bassboost") {
-			filtersEmbed.setDescription("✅ | Bộ lọc BassBoost hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Bassboost hiện đang bật!");
 			player.bassboost = true;
 		} else if (args == "vaporwave") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Vaporwave hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Vaporwave hiện đang bật!");
 			player.vaporwave = true;
 		} else if (args == "pop") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Pop hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Pop hiện đang bật!");
 			player.pop = true;
 		} else if (args == "soft") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Soft hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Soft hiện đang bật!");
 			player.soft = true;
 		} else if (args == "treblebass") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Treblebass hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Treblebass hiện đang bật!");
 			player.treblebass = true;
 		} else if (args == "eightD") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Eight Dimension hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ EightD hiện đang bật!");
 			player.eightD = true;
 		} else if (args == "karaoke") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Karaoke hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Karaoke hiện đang bật!");
 			player.karaoke = true;
 		} else if (args == "vibrato") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Vibrato hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Vibrato hiện đang bật!");
 			player.vibrato = true;
 		} else if (args == "tremolo") {
-			filtersEmbed.setDescription("✅ | Bộ lọc Tremolo hiện đang được kích hoạt!");
+			filtersEmbed.setDescription("✅ | EQ Tremolo hiện đang bật!");
 			player.tremolo = true;
 		} else if (args == "off") {
 			filtersEmbed.setDescription("✅ | EQ đã được xóa!");

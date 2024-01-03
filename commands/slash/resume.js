@@ -18,7 +18,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("Nút Lavalink không được kết nối"),
+						.setDescription("Lavalink chưa được kết nối"),
 				],
 			});
 		}
@@ -39,7 +39,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("Bài hát hiện tại đã được tiếp tục phát rồi"),
+						.setDescription("Bài hát đã được tiếp tục trước đó!"),
 				],
 				ephemeral: true,
 			});

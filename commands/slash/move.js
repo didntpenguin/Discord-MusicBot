@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js");
 
 const command = new SlashCommand()
 	.setName("move")
-	.setDescription("Di chuyển bài hát đến một vị trí khác")
+	.setDescription("Di chuyển vị trí hàng đợi của bài hát")
 	.addIntegerOption((option) =>
 		option
 			.setName("track")
@@ -34,7 +34,7 @@ const command = new SlashCommand()
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
-						.setDescription("Nút Lavalink không được kết nối"),
+						.setDescription("Lavalink chưa được kết nối"),
 				],
 			});
 		}
@@ -67,7 +67,7 @@ const command = new SlashCommand()
 			embeds: [
 				new MessageEmbed()
 					.setColor(client.config.embedColor)
-					.setDescription(":white_check_mark: | **Đã di chuyển bài hát**"),
+					.setDescription(":white_check_mark: | **Đã di chuyển**"),
 			],
 		});
 	});

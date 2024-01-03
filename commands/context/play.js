@@ -19,7 +19,7 @@ module.exports = {
     let node = await client.getLavalink(client);
     if (!node) {
       return interaction.reply({
-        embeds: [client.ErrorEmbed("Nút Lavalink không được kết nối")],
+        embeds: [client.ErrorEmbed("Lavalink chưa được kết nối")],
       });
     }
 

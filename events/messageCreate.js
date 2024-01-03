@@ -22,7 +22,7 @@ module.exports = async (client, message) => {
     const mentionEmbed = new MessageEmbed()
       .setColor(client.config.embedColor)
       .setDescription(
-        `My prefix on this server is \`/\` (Slash Command).\nTo get started you can type \`/help\` to see all my commands.\nIf you can't see it, Please [re-invite](invite) me with the correct permissions.`
+        `Lệnh của tôi là \`/\` (Slash Command).\nĐể bắt đầu,nhập \`/help\` để thấy tất cả lệnh \nNếu bạn không nhìn thấy,vui lòng [re-invite](invite) tôi với đúng quyền`
       );
 
     message.channel.send({
