@@ -57,7 +57,7 @@ const command = new SlashCommand()
 			// show who requested the song via setField, also show the duration of the song
 			.setFields([
 				{
-					name: "Được yêu cầu bởi",
+					name: "Đã thêm bởi",
 					value: `<@${ song.requester.id }>`,
 					inline: true,
 				},
